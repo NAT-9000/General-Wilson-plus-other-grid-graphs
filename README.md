@@ -13,7 +13,7 @@ Defaults to D if not provided.
 
 ```
 import EmbeddableGridGraphClass as egg
-AM = egg.EmbeddableGridGraph(4, "T").adjacency_matrix()
+AM = egg.EmbeddableGridGraph(n, "T").adjacency_matrix()
 ```
 
 # Wilsons Spanning Tree generator plus cycles
@@ -24,6 +24,7 @@ selected. Said number defaults to zero if not provided and is internally capped 
 maximum number of edges that is possible to add.
 
 ```
-TREE = wsp.SpanningTreePlusCycles(AM, 4).generate_spanning_tree()
 import WilsonSpanningTreePlusLoops as wsp
+TREE = wsp.SpanningTreePlusCycles(AM, m).generate_spanning_tree()
+
 ```
